@@ -17,18 +17,18 @@ from pyrogram import filters
 load_dotenv()
 
 # Get it from my.telegram.org
-API_ID = int(getenv("API_ID", ""))
-API_HASH = getenv("API_HASH")
+API_ID = int(getenv("API_ID", "19408128"))
+API_HASH = getenv("API_HASH", "8c49afc538bd4e2029e32adfc1a0cacc")
 
 ## Get it from @Botfather in Telegram.
-BOT_TOKEN = getenv("BOT_TOKEN")
+BOT_TOKEN = getenv("BOT_TOKEN", "5435067066:AAFBlJ41Ryekp_y4-WjQJPC4mSKE7_SjxjY")
 
 # Database to save your chats and stats... Get MongoDB:-  https://telegra.ph/How-To-get-Mongodb-URI-04-06
-MONGO_DB_URI = getenv("MONGO_DB_URI", None)
+MONGO_DB_URI = getenv("MONGO_DB_URI", "MONGO_DB_URI = mongodb+srv://Tamilbots:tamilbots@cluster0.aa2e1nd.mongodb.net/?retryWrites=true&w=majority")
 
 # Custom max audio(music) duration for voice chat. set DURATION_LIMIT in variables with your own time(mins), Default to 60 mins.
 DURATION_LIMIT_MIN = int(
-    getenv("DURATION_LIMIT", "60")
+    getenv("DURATION_LIMIT", "600")
 )  # Remember to give value in Minutes
 
 # Duration Limit for downloading Songs in MP3 or MP4 format from bot
@@ -37,14 +37,14 @@ SONG_DOWNLOAD_DURATION = int(
 )  # Remember to give value in Minutes
 
 # You'll need a Private Group ID for this.
-LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", ""))
+LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1001719920984"))
 
 # A name for your Music bot.
-MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME")
+MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "Tgm Drugs Of Yuvan")
 
 # Your User ID.
 OWNER_ID = list(
-    map(int, getenv("OWNER_ID", "").split())
+    map(int, getenv("OWNER_ID", "1471469091").split())
 )  # Input type must be interger
 
 # Get it from http://dashboard.heroku.com/account
@@ -61,18 +61,18 @@ UPSTREAM_REPO = getenv(
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 
 # GIT TOKEN ( if your edited repo is private)
-GIT_TOKEN = getenv("GIT_TOKEN", None)
+GIT_TOKEN = getenv("GIT_TOKEN", "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")
 
 # Only  Links formats are  accepted for this Var value.
 SUPPORT_CHANNEL = getenv(
-    "SUPPORT_CHANNEL", None
+    "SUPPORT_CHANNEL", "https://t.me/Alinallmovies"
 )  # Example:- https://t.me/TheYukki
 SUPPORT_GROUP = getenv(
-    "SUPPORT_GROUP", None
+    "SUPPORT_GROUP", "https://t.me/throwpathidpworld"
 )  # Example:- https://t.me/YukkiSupport
 
 # Set it in True if you want to leave your assistant after a certain amount of time. [Set time via AUTO_LEAVE_ASSISTANT_TIME]
-AUTO_LEAVING_ASSISTANT = getenv("AUTO_LEAVING_ASSISTANT", None)
+AUTO_LEAVING_ASSISTANT = getenv("AUTO_LEAVING_ASSISTANT", "False"I)
 
 # Time after which you're assistant account will leave chats automatically.
 AUTO_LEAVE_ASSISTANT_TIME = int(
@@ -107,7 +107,7 @@ SPOTIFY_CLIENT_ID = getenv("SPOTIFY_CLIENT_ID", None)
 SPOTIFY_CLIENT_SECRET = getenv("SPOTIFY_CLIENT_SECRET", None)
 
 # Maximum number of video calls allowed on bot. You can later set it via /set_video_limit on telegram
-VIDEO_STREAM_LIMIT = int(getenv("VIDEO_STREAM_LIMIT", "3"))
+VIDEO_STREAM_LIMIT = int(getenv("VIDEO_STREAM_LIMIT", "30"))
 
 # Maximum Limit Allowed for users to save playlists on bot's server
 SERVER_PLAYLIST_LIMIT = int(getenv("SERVER_PLAYLIST_LIMIT", "30"))
@@ -124,11 +124,11 @@ CLEANMODE_DELETE_MINS = int(
 # Telegram audio  and video file size limit
 
 TG_AUDIO_FILESIZE_LIMIT = int(
-    getenv("TG_AUDIO_FILESIZE_LIMIT", "104857600")
+    getenv("TG_AUDIO_FILESIZE_LIMIT", "994857600")
 )  # Remember to give value in bytes
 
 TG_VIDEO_FILESIZE_LIMIT = int(
-    getenv("TG_VIDEO_FILESIZE_LIMIT", "1073741824")
+    getenv("TG_VIDEO_FILESIZE_LIMIT", "9973741824")
 )  # Remember to give value in bytes
 
 # Chceckout https://www.gbmb.org/mb-to-bytes  for converting mb to bytes
@@ -138,7 +138,7 @@ TG_VIDEO_FILESIZE_LIMIT = int(
 SET_CMDS = getenv("SET_CMDS", False)
 
 # You'll need a Pyrogram String Session for these vars. Generate String from our session generator bot @YukkiStringBot
-STRING1 = getenv("STRING_SESSION", None)
+STRING1 = getenv("STRING_SESSION", "BQCiJ7PWJLULSP9lXWpKse0JvITDk9sxqb5DyjWuKBXj2bK68VTwqE-ddpA54VyHiQv5zS5768EI-gBenMut-ecmPMX7RAy2rVQ71fiD531TB-4suWWYi_MM_SWff0R-4sTFokIqtPg3l-eWURrFWdIskhaa3FPZn21iyqt0i2W68KLH6kOcoHTilfl9mJVIqx9jE78yNdewKLV6IqNnzLQ8dNZc9dVWNqv2HyT3Kxinh-uJusSrxCY3Na-1ikn85WYjjk0hexN9L5pGxBYv_9viH_BV0SZtV6hn5uMv9-7RQOEi2sID4X_q3Wd3by_Ndx_8pSAZDTBMDtza6GKoVv6KAAAAAUBHgvcA")
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
@@ -172,7 +172,7 @@ START_IMG_URL = getenv("START_IMG_URL", "https://telegra.ph/file/e2021dfd84a80c1
 
 PING_IMG_URL = getenv(
     "PING_IMG_URL",
-    "assets/Ping.jpeg",
+    "https://telegra.ph/file/3f0c65d3899e9985eb202.jpg",
 )
 
 PLAYLIST_IMG_URL = getenv(
